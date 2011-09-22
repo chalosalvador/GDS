@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<install version="1.7" type="template">
+    <name>gds</name>
+    <creationDate>09/09/11</creationDate>
+    <author>Edwin Salvador</author>
+    <authorEmail>chalosalvador@hotmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright>Copyright (C) 2011 Edwin Salvador</copyright>
+    <license>GPL</license>
+    <version>1.7</version>
+    <description>Plantilla creada para sitio web la Guia de Derechos Sociales</description>
+    <files>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>images</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+    </files>
+    <positions>
+        <position>menu</position>
+    </positions>
+</install>

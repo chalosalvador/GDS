@@ -1,0 +1,260 @@
+body{
+    background: #555555 repeat-y center;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000000;
+}
+.container{
+    
+}
+/*Menu*/
+ul.menu, ul.menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  background: #CCCCCC;
+}
+
+ul.menu a,
+ul.menu span{
+  display: block;
+  text-decoration: none;	
+}
+
+ul.menu li {
+  margin-top: 1px;
+  padding-left: 22px;
+}
+ul.menu li.parent{
+    background: url(../js/accordeon/images/close.png) no-repeat top left;
+}
+ul.menu li.parent.active{
+    background: url(../js/accordeon/images/open.png) no-repeat top left;
+}
+ul.menu li a,
+ul.menu li span{
+  background: #333;
+  color: #fff;	
+  padding: 0.5em;
+}
+
+ul.menu li a:hover,
+ul.menu li span:hover{
+  background: #000;
+}
+
+ul.menu li ul li a,
+ul.menu li ul li span{
+  background: #ccc;
+  color: #000;
+  padding-left: 20px;
+}
+ul.menu li span{
+    cursor: default;
+}
+
+ul.menu li ul li a:hover,
+ul.menu li ul li span:hover,
+ul.menu li ul li.active.current a,
+ul.menu li ul li.active.current span{
+  background: #aaa;
+  border-left: 5px #000 solid;
+  padding-left: 15px;
+}
+
+/* Componente */
+#contenedor-componente{
+}
+#componente{
+}
+
+/* Scrollpane */
+.jspDrag {
+    border: 2px outset #000000;
+    cursor: pointer;
+    left: 0;
+    position: relative;
+    background: none;
+}
+.jspTrack {
+    position: relative;
+    background: none;
+}
+.jspVerticalBar {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+    background: none;
+}
+.jspArrow {
+    background: none;
+    display: block;
+    text-indent: -20000px;
+}
+.jspArrow.jspDisabled.jspArrowUp {
+    background: url(../js/jscrollpane/image/flechas-disabled.png) -96px -194px no-repeat transparent;
+    cursor: default;
+    visibility: hidden;
+    opacity: 0;
+}
+.jspArrowUp{
+    background: url(../js/jscrollpane/image/flechas.png) -96px -194px no-repeat transparent;
+}
+.jspArrow.jspDisabled.jspArrowDown {
+    background: url(../js/jscrollpane/image/flechas-disabled.png) -66px -194px no-repeat transparent;
+    cursor: default;
+    visibility: hidden;
+    opacity: 0;
+}
+.jspArrowDown{
+    background: url(../js/jscrollpane/image/flechas.png) -66px -194px no-repeat transparent;
+}
+/* System Messages */
+
+.error
+{
+    padding:0px;
+    margin-bottom: 20px;
+}
+
+.error h2
+{
+    color:#000 !important;
+    font-size:1.4em !important;
+    text-transform:uppercase;
+    padding:0 0 0 0px !important
+}
+
+#system-message
+{
+	    margin:10px 0 20px 0;
+	    border-left:0;
+	    border-right:0;
+}
+
+#system-message dt
+{
+    font-weight: bold;
+}
+#system-message dd
+{
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    text-indent: 0px;
+    padding:0
+}
+#system-message dd ul
+{
+    color: #000;
+    list-style: none;
+    padding: 0px;
+}
+#system-message dd ul li
+{
+    line-height:1.5em
+}
+
+/* System Standard Messages */
+#system-message dt.message
+{
+    position:absolute;
+    top:-2000px;
+    left:-3000px;
+}
+
+#system-message dd.message  ul
+{
+    background: #fff  url(../images/system/notice-info.png) no-repeat;
+    padding-left:40px;
+    padding: 10px 10px 10px 40px;
+    border-top: 2px solid #90B203;
+    border-bottom: 2px solid #90B203;
+}
+
+#system-message dd.message ul li{background:none !important}
+
+/* System Error Messages */
+#system-message dt.error
+{
+    position:absolute;
+    top:-2000px;
+    left:-3000px;
+}
+
+#system-message dd.error ul
+{
+    background:#fff url(../images/system/notice-alert.png) no-repeat ;
+    padding-left:40px;
+    padding: 10px 10px 10px 40px;
+border-top: 2px solid #990000;
+border-bottom: 2px solid #990000;
+}
+
+
+
+/* System Notice Messages */
+#system-message dt.notice,
+#system-message dt.warning
+{
+    position:absolute;
+    top:-2000px;
+    left:-3000px;
+}
+
+#system-message dd.notice  ul,
+#system-message dd.warning  ul
+{
+	    background:#fff url(../images/system/notice-note.png) no-repeat ;
+	    padding-left:40px;
+	padding: 10px 10px 10px 40px;
+	border-top: 2px solid #FAA528;
+	border-bottom: 2px solid #FAA528;
+}
+#system-message dd.notice ul,
+#system-message dd.warning ul{ color: #000;margin:10px 0 }
+
+#system-message
+{
+margin-bottom: 0px;
+padding: 0;
+}
+
+#system-message dt
+{
+font-weight: bold;
+}
+
+#system-message dd
+{
+font-weight: bold;
+padding: 0;
+}
+
+/* -- TOOLTIP STYLES ----------------------------- */
+.tip {
+    float: left;
+    background: #ffc;
+    border: 1px solid #D4D5AA;
+    padding: 5px;
+    max-width: 400px;
+    z-index: 2;
+    color: #000000;
+}
+
+.tip-title {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: -15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: url(../images/system/selector-arrow.png) no-repeat;
+}
+
+.tip-text {
+    font-size: 1em;
+    margin: 0;
+}
